@@ -3,137 +3,639 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SparkSync - Find Your Perfect Match</title>
-
+    
+    <!-- SEO Meta Tags -->
+    <title>SparkSync - Best Dating App to Find Love & Connect | South Africa</title>
+    <meta name="description" content="Discover SparkSync, the ultimate dating app for finding love and making connections in South Africa. Swipe, match, chat, and join local social plans to meet new people. Download now!">
+    <meta name="keywords" content="dating app, find love, South Africa dating, meet new people, swipe and match, social plans, instant chat, romantic connections, SparkSync">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sparksync.app">
+    <meta property="og:title" content="SparkSync - Best Dating App to Find Love & Connect | South Africa">
+    <meta property="og:description" content="SparkSync is South Africa's top dating app for swiping, matching, and meeting new people. Join local social plans, chat instantly, and find your perfect match.">
+    <meta property="og:image" content="https://www.sparksync.app/og-image.jpg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SparkSync - Best Dating App to Find Love & Connect | South Africa">
+    <meta name="twitter:description" content="Find love with SparkSync, the leading dating app in South Africa. Swipe, match, and join social plans to connect with new people. Download now!">
+    
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#FF69B4">
     <link rel="shortcut icon" href="/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#000000">
     
+    <!-- Tailwind CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
     <style>
+        /* Main gradient (enhanced pink to purple) */
         .gradient-bg {
             background: linear-gradient(135deg, #FF69B4, #800080);
         }
-        .fade-in {
-            animation: fadeIn 1s ease-in;
+        .accent-gradient {
+            background: linear-gradient(135deg, #FF69B4, #DA70D6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
+        
+        /* Modern animations */
         .hover-scale {
-            transition: transform 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         .hover-scale:hover {
             transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Modern navbar styles */
+        .navbar-blur {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        
+        /* Custom bullet points */
+        .benefit-list li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            list-style-type: none;
+        }
+        
+        .benefit-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #FF69B4;
+            font-weight: bold;
+        }
+        
+        /* Glow effect */
+        .glow-on-hover:hover {
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.6);
+        }
+        
+        /* Modern card design */
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-10px);
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #FF69B4;
+            border-radius: 4px;
+        }
+        
+        /* Testimonial cards */
+        .testimonial-card {
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 4px solid #FF69B4;
+        }
+        
+        /* Text highlight */
+        .highlight {
+            color: #FF69B4;
+        }
+        
+        /* Count up animation */
+        .count-up {
+            transition: all 0.5s ease;
+        }
+        
+        /* Button animations */
+        .btn-primary {
+            background: linear-gradient(135deg, #FF69B4, #800080);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 14px rgba(255, 105, 180, 0.3);
+        }
+        
+        .btn-primary:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            transform: translateX(-100%);
+        }
+        
+        .btn-primary:hover:after {
+            transform: translateX(100%);
+        }
+        
+        /* Download button special effect */
+        .download-btn {
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 5px 20px rgba(255, 105, 180, 0.4);
+        }
+        
+        .download-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 105, 180, 0.8), rgba(128, 0, 128, 0.8));
+            border-radius: 9999px;
+            z-index: -1;
+            transition: all 0.4s ease;
+            opacity: 0;
+        }
+        
+        .download-btn:hover:before {
+            opacity: 1;
+        }
+        
+        /* Floating animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        .float-animation {
+            animation: float 5s ease-in-out infinite;
+        }
+        
+        /* Loading dot animation */
+        @keyframes loading {
+            0%, 100% {
+                opacity: 0.3;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        
+        .loading-dot {
+            animation: loading 1.4s infinite both;
+        }
+        
+        .loading-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .loading-dot:nth-child(3) {
+            animation-delay: 0.4s;
         }
     </style>
 </head>
-<body class="bg-black text-white">
-    <!-- Hero Section -->
-    <header class="gradient-bg py-20 px-4">
+<body class="text-white bg-black">
+    <!-- Fixed Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 navbar-blur py-4 px-6 transition-all duration-300" id="navbar">
         <div class="container mx-auto max-w-6xl">
-            <nav class="flex justify-between items-center mb-16">
-    <div class="flex items-center gap-2">
-        <img src="Ssl.png" alt="Logo" class="h-8 w-auto">
-        <h1 class="text-4xl font-bold">SparkSync</h1>
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <img src="Ssl.png" alt="SparkSync Logo" class="h-8 w-auto">
+                    <h1 class="text-3xl font-bold accent-gradient">SparkSync</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="hover:text-pink-200 transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="hover:text-pink-200 transition-colors duration-300">Benefits</a>
+                    <a href="#screenshots" class="hover:text-pink-200 transition-colors duration-300">Gallery</a>
+                    <a href="#testimonials" class="hover:text-pink-200 transition-colors duration-300">Testimonials</a>
+                    <a href="#download" class="hover:text-pink-200 transition-colors duration-300">Download</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-black bg-opacity-95 transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="flex justify-end p-6">
+            <button id="close-menu" class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center text-center space-y-8 mt-10">
+            <a href="#features" class="text-xl hover:text-pink-200 transition-colors duration-300 mobile-link">Features</a>
+            <a href="#benefits" class="text-xl hover:text-pink-200 transition-colors duration-300 mobile-link">Benefits</a>
+            <a href="#screenshots" class="text-xl hover:text-pink-200 transition-colors duration-300 mobile-link">Gallery</a>
+            <a href="#testimonials" class="text-xl hover:text-pink-200 transition-colors duration-300 mobile-link">Testimonials</a>
+            <a href="#download" class="text-xl hover:text-pink-200 transition-colors duration-300 mobile-link">Download</a>
+        </div>
     </div>
-    <div class="space-x-6">
-        <a href="#features" class="hover:text-pink-200">Features</a>
-        <a href="#download" class="hover:text-pink-200">Download</a>
-    </div>
-</nav>
-            
+
+    <!-- Hero Section -->
+    <header class="gradient-bg pt-32 pb-20 px-4">
+        <div class="container mx-auto max-w-6xl">
             <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h2 class="text-5xl font-bold mb-6 fade-in">Find Your Perfect Match</h2>
-                    <p class="text-xl mb-8 fade-in">SparkSync is the ultimate dating mobile app for swiping, matching, and meeting new people near you. With a modern and romantic design, our app is the best dating app developed in South Africa, helping thousands find love and fun plans. Join now and experience instant chat, notifications, and successful meetups!</p>
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                        <span class="accent-gradient">Find Love</span>, 
+                        <br>Make <span class="highlight">Connections</span>
+                    </h2>
+                    <p class="text-xl mb-8 opacity-90">
+                        Discover <strong>SparkSync</strong>, South Africa's premier dating app designed for swiping, matching, and meeting new people. Join local social plans, chat instantly, and find your perfect match with our romantic, user-friendly platform.
+                    </p>
+                    <ul class="benefit-list mb-8">
+                        <li>Swipe and match with ease</li>
+                        <li>Join or create local social plans</li>
+                        <li>Instant chat for seamless connections</li>
+                        <li>Safe, secure, and fun dating experience</li>
+                    </ul>
                     <div class="flex space-x-4">
-                        <a href="#" class="bg-white text-black px-8 py-3 rounded-full hover-scale">
-                            Get Started
+                        <a href="#download" class="btn-primary text-white px-8 py-3 rounded-full hover-scale glow-on-hover font-medium download-btn">
+                            Download Free
+                        </a>
+                        <a href="#features" class="bg-transparent border border-white text-white px-8 py-3 rounded-full hover-scale transition-all duration-300 hover:bg-white hover:text-black font-medium">
+                            Explore Features
                         </a>
                     </div>
                 </div>
-                <div class="md:w-1/2">
-                    <img src="12.png" alt="Smart Matching" class="mx-auto mb-4">
+                <div class="md:w-1/2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-pink-500/30 to-purple-500/30 rounded-3xl filter blur-xl opacity-70 transform rotate-3"></div>
+                        <img src="12.png" alt="SparkSync App Interface" class="relative mx-auto rounded-3xl shadow-2xl hover-scale float-animation">
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Features Section -->
-    <section id="features" class="py-20 px-4">
+    <!-- Stats Section -->
+    <section class="py-16 px-4 bg-gray-900">
         <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl font-bold mb-16 text-center">🔥 SparkSync Social Plans: Meet, Connect, and Explore!</h2>
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="text-center p-6 hover-scale">
-                    <img src="8.png" alt="Smart Matching" class="mx-auto mb-4">
-                    <h3 class="text-2xl font-bold mb-4">📍 Discover & Join Plans Nearby</h3>
-                    <p>See what’s happening around you with SparkSync’s interactive map! Instantly find social plans created by others—whether it’s a coffee meetup, a game night, or a weekend adventure.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold mb-2 count-up highlight" data-count="200">200K+</div>
+                    <p class="text-gray-400">Downloads</p>
                 </div>
-                <div class="text-center p-6 hover-scale">
-                    <img src="6.png" alt="Safe & Secure" class="mx-auto mb-4">
-                    <h3 class="text-2xl font-bold mb-4">✨ Create & Share Your Own Plans</h3>
-                    <p>Want to start something fun? Drop a pin on the map, add the details, and invite others to join. Whether you're looking for new friends or planning a casual hangout, it’s never been easier!</p>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold mb-2 count-up highlight" data-count="85">85%</div>
+                    <p class="text-gray-400">Match Success Rate</p>
                 </div>
-                <div class="text-center p-6 hover-scale">
-                    <img src="7.png" alt="Real Connections" class="mx-auto mb-4">
-                    <h3 class="text-2xl font-bold mb-4">💬 Chat & Stay Connected</h3>
-                    <p>Each plan comes with a built-in chat, so you can coordinate with attendees before the event. Get to know who’s coming and make connections that last!</p>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-bold mb-2 count-up highlight" data-count="10">10K+</div>
+                    <p class="text-gray-400">Social Plans Created</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-4xl font-bold mb-2 count-up highlight" data-count="500">500K+</div>
+                    <p class="text-gray-400">Connections Made</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- App Screenshots -->
-    <section class="py-20 px-4 gradient-bg">
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 bg-black">
         <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl font-bold mb-16 text-center">See SparkSync in Action</h2>
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-4">Spark <span class="highlight">Connections</span> with Key Features</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">SparkSync offers innovative tools to help you meet, connect, and build meaningful relationships.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="feature-card p-8" data-aos="fade-up" data-aos-delay="100">
+                    <img src="8.png" alt="Discover & Join Plans Nearby" class="mx-auto mb-6 rounded-lg w-full hover-scale">
+                    <div class="text-4xl mb-4">📍</div>
+                    <h3 class="text-2xl font-bold mb-4">Discover & Join Plans Nearby</h3>
+                    <p class="text-gray-400">
+                        Explore local social plans on SparkSync’s interactive map. From coffee dates to group adventures, find events that spark your interest.
+                    </p>
+                </div>
+                
+                <div class="feature-card p-8" data-aos="fade-up" data-aos-delay="200">
+                    <img src="6.png" alt="Create & Share Your Own Plans" class="mx-auto mb-6 rounded-lg w-full hover-scale">
+                    <div class="text-4xl mb-4">✨</div>
+                    <h3 class="text-2xl font-bold mb-4">Create & Share Your Own Plans</h3>
+                    <p class="text-gray-400">
+                        Plan your own events and invite others to join. Whether it’s a casual hangout or a romantic outing, SparkSync makes it easy to connect.
+                    </p>
+                </div>
+                
+                <div class="feature-card p-8" data-aos="fade-up" data-aos-delay="300">
+                    <img src="7.png" alt="Chat & Stay Connected" class="mx-auto mb-6 rounded-lg w-full hover-scale">
+                    <div class="text-4xl mb-4">💬</div>
+                    <h3 class="text-2xl font-bold mb-4">Chat & Stay Connected</h3>
+                    <p class="text-gray-400">
+                        Connect instantly with built-in chat for every plan. Coordinate, flirt, and build relationships before the event even starts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="benefits" class="py-20 px-4 gradient-bg">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-4">How SparkSync Ignites Connections</h2>
+                <p class="text-xl max-w-3xl mx-auto">A seamless three-step process to find love and make meaningful connections.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="text-center" data-aos="fade-right" data-aos-delay="100">
+                    <div class="inline-block p-6 bg-black bg-opacity-30 rounded-full mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">1. Swipe & Match</h3>
+                    <p>
+                        Browse profiles, swipe right to like, and match with people who share your vibe. SparkSync’s algorithm ensures compatibility.
+                    </p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="inline-block p-6 bg-black bg-opacity-30 rounded-full mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">2. Join or Create Plans</h3>
+                    <p>
+                        Discover local events or create your own social plans. From casual meetups to romantic dates, connect with others in real life.
+                    </p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-left" data-aos-delay="300">
+                    <div class="inline-block p-6 bg-black bg-opacity-30 rounded-full mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">3. Chat & Connect</h3>
+                    <p>
+                        Use instant chat to coordinate plans, flirt, and build connections. SparkSync makes it easy to turn matches into meaningful relationships.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots Gallery -->
+    <section id="screenshots" class="py-20 px-4 bg-black">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-4">SparkSync in Action</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Explore the vibrant, romantic interface designed to make dating fun and effortless.</p>
+            </div>
+            
             <div class="grid md:grid-cols-3 gap-8">
-                <img src="13.png" alt="App Interface 1" class="rounded-3xl shadow-lg hover-scale">
-                <img src="14.png" alt="App Interface 2" class="rounded-3xl shadow-lg hover-scale">
-                <img src="9.png" alt="App Interface 3" class="rounded-3xl shadow-lg hover-scale">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <img src="13.png" alt="SparkSync Profile Interface" class="rounded-3xl shadow-lg hover-scale w-full">
+                    <p class="text-center mt-4 text-gray-400">Swipe & Match Interface</p>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <img src="14.png" alt="SparkSync Social Plans Interface" class="rounded-3xl shadow-lg hover-scale w-full">
+                    <p class="text-center mt-4 text-gray-400">Social Plans Map</p>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <img src="9.png" alt="SparkSync Chat Interface" class="rounded-3xl shadow-lg hover-scale w-full">
+                    <p class="text-center mt-4 text-gray-400">Instant Chat Feature</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-4 gradient-bg">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-4">What Our Users Say</h2>
+                <p class="text-xl max-w-3xl mx-auto">Join thousands of South Africans who’ve found love and connection with SparkSync.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "SparkSync made dating fun again! I joined a local game night plan and met someone special. The chat feature is so easy to use."
+                    </p>
+                    <p class="font-bold">Lindiwe M., Cape Town</p>
+                </div>
+                
+                <div class="testimonial-card p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "I created a hiking plan on SparkSync, and it was amazing to meet so many fun people. I even found my partner!"
+                    </p>
+                    <p class="font-bold">Thabo S., Johannesburg</p>
+                </div>
+                
+                <div class="testimonial-card p-6 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3 .921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784 .57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "The app’s design is so romantic and easy to use. I’ve made so many new friends through SparkSync’s social plans!"
+                    </p>
+                    <p class="font-bold">Nia K., Durban</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Download Section -->
-    <section id="download" class="py-20 px-4">
+    <section id="download" class="py-20 px-4 bg-black">
         <div class="container mx-auto max-w-6xl text-center">
-            <h2 class="text-4xl font-bold mb-8">Download SparkSync Today</h2>
-            <p class="text-xl mb-12">Available on iOS and Android</p>
-            <div class="flex justify-center space-x-6">
-                <a href="#" class="hover-scale">
-                    <img src="apple.png" alt="Download on App Store" class="rounded-lg">
-                </a>
-                <a href="#" class="hover-scale">
-                    <img src="play.png" alt="Get it on Google Play" class="rounded-lg">
-                </a>
-                 <a href="#" class="hover-scale">
-                    <img src="loadly.png" alt="Available on Loadly" class="rounded-lg">
-                </a>
+            <div data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-8">Download SparkSync Today</h2>
+                <p class="text-xl mb-12">Available on iOS, Android, and more</p>
+                <div class="flex justify-center space-x-6 flex-wrap gap-4">
+                    <a href="#" class="hover-scale download-btn">
+                        <img src="apple.png" alt="Download on the App Store" class="rounded-lg max-w-[150px]">
+                    </a>
+                    <a href="#" class="hover-scale download-btn">
+                        <img src="play.png" alt="Get it on Google Play" class="rounded-lg max-w-[150px]">
+                    </a>
+                    <a href="#" class="hover-scale download-btn">
+                        <img src="loadly.png" alt="Available on Loadly" class="rounded-lg max-w-[150px]">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-10 px-4 border-t border-gray-800">
+    <footer class="py-10 px-4 border-t border-gray-800 bg-black">
         <div class="container mx-auto max-w-6xl">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <p>&copy; 2025 SparkSync. All rights reserved.</p>
+                <p>© 2025 SparkSync. All rights reserved.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="hover:text-pink-400">Privacy Policy</a>
-                    <a href="#" class="hover:text-pink-400">Terms of Service</a>
-                    <a href="#" class="hover:text-pink-400">Contact Us</a>
+                    <a href="#" class="hover:text-pink-400 transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-pink-400 transition-colors duration-300">Terms of Service</a>
+                    <a href="#" class="hover:text-pink-400 transition-colors duration-300">Contact Us</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('translate-x-full');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+        });
+
+        // Count Up Animation
+        const countUpElements = document.querySelectorAll('.count-up');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    const count = parseInt(target.getAttribute('data-count'));
+                    let current = 0;
+                    const increment = count / 100;
+                    const updateCount = () => {
+                        current += increment;
+                        if (current < count) {
+                            target.textContent = Math.ceil(current) + (target.textContent.includes('+') ? '+' : '');
+                            requestAnimationFrame(updateCount);
+                        } else {
+                            target.textContent = count + (target.textContent.includes('+') ? '+' : '');
+                        }
+                    };
+                    updateCount();
+                    observer.unobserve(target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        countUpElements.forEach(el => observer.observe(el));
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.add('py-4');
+                navbar.classList.remove('py-2');
+            }
+        });
+    </script>
 </body>
 </html>
