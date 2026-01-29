@@ -4,82 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
-    <title>SparkSync - Best Dating App to Find Love & Connect | South Africa</title>
-    <meta name="description" content="Discover SparkSync, the ultimate dating app for finding love and making connections in South Africa. Swipe, match, chat, and join local social plans to meet new people. Download now!">
-    <meta name="keywords" content="dating app, find love, South Africa dating, meet new people, swipe and match, social plans, instant chat, romantic connections, SparkSync">
+    <!-- Primary Meta Tags -->
+    <title><!-- EDITABLE:page-title -->SparkSync - Best Dating App to Find Love & Connect | South Africa<!-- /EDITABLE --></title>
+    <meta name="title" content="<!-- EDITABLE:meta-title -->SparkSync - Best Dating App to Find Love & Connect | South Africa<!-- /EDITABLE -->">
+    <meta name="description" content="<!-- EDITABLE:meta-description -->Discover SparkSync, the ultimate dating app for finding love and making connections in South Africa. Swipe, match, chat, earn 50% ad revenue, and join local social plans to meet new people. Download now!<!-- /EDITABLE -->">
+    <meta name="keywords" content="<!-- EDITABLE:meta-keywords -->dating app, find love, South Africa dating, meet new people, swipe and match, social plans, instant chat, romantic connections, SparkSync, earn money dating, ad revenue share<!-- /EDITABLE -->">
+    <meta name="author" content="SparkSync">
     
-    <!-- Open Graph / Social Media Meta Tags -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sparksync.app">
-    <meta property="og:title" content="SparkSync - Best Dating App to Find Love & Connect | South Africa">
-    <meta property="og:description" content="SparkSync is South Africa's top dating app for swiping, matching, and meeting new people. Join local social plans, chat instantly, and find your perfect match.">
-    <meta property="og:image" content="https://www.sparksync.app/og-image.jpg">
+    <meta property="og:url" content="<!-- EDITABLE:og-url -->https://www.sparksync.app<!-- /EDITABLE -->">
+    <meta property="og:title" content="<!-- EDITABLE:og-title -->SparkSync - Best Dating App to Find Love & Connect | South Africa<!-- /EDITABLE -->">
+    <meta property="og:description" content="<!-- EDITABLE:og-description -->SparkSync is South Africa's top dating app for swiping, matching, and meeting new people. Join local social plans, chat instantly, earn 50% ad revenue, and find your perfect match.<!-- /EDITABLE -->">
+    <meta property="og:image" content="<!-- EDITABLE:og-image -->https://www.sparksync.app/Ssl.png<!-- /EDITABLE -->">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<!-- EDITABLE:twitter-url -->https://www.sparksync.app<!-- /EDITABLE -->">
+    <meta property="twitter:title" content="<!-- EDITABLE:twitter-title -->SparkSync - Find Love, Earn Money While Dating<!-- /EDITABLE -->">
+    <meta property="twitter:description" content="<!-- EDITABLE:twitter-description -->Join SparkSync! Swipe, match, earn 50% ad revenue, and meet amazing people through local social plans.<!-- /EDITABLE -->">
+    <meta property="twitter:image" content="<!-- EDITABLE:twitter-image -->https://www.sparksync.app/Ssl.png<!-- /EDITABLE -->">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="Ssl.png">
+    <link rel="apple-touch-icon" href="Ssl.png">
     
-    <!-- Tailwind CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- AOS Animation Library -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     
     <style>
-        /* Main gradient matching app colors - purple to red */
-        .gradient-bg {
-            background: linear-gradient(135deg, #7C3AED 0%, #1E1E1E 30%, #5B21B6 60%, #DC2626 100%);
+        :root {
+            /* EDITABLE: Brand Colors */
+            --primary: #7C3AED;
+            --primary-dark: #6D28D9;
+            --secondary: #EC4899;
+            --secondary-dark: #DB2777;
+            --accent: #A855F7;
+            --success: #10B981;
+            --danger: #DC2626;
+            --warning: #F59E0B;
+            --info: #3B82F6;
+            
+            /* Neutral colors */
+            --dark: #1E1E1E;
+            --darker: #0A0A0A;
+            --light: #F8F9FA;
+            --white: #FFFFFF;
+            --gray: #6B7280;
+            --gray-light: #E5E7EB;
+            
+            /* Effects */
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+            --shadow: 0 4px 16px rgba(0,0,0,0.12);
+            --shadow-lg: 0 12px 32px rgba(0,0,0,0.16);
+            --shadow-xl: 0 20px 48px rgba(0,0,0,0.2);
+            --radius: 20px;
+            --radius-sm: 12px;
+            --radius-lg: 32px;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.2s ease;
         }
         
-        .accent-gradient {
-            background: linear-gradient(135deg, #A855F7, #EC4899);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         
-        /* Glass morphism effect */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--white);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--darker) 30%, #5B21B6 60%, var(--danger) 100%);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 4vw, 3rem);
+        }
+        
+        /* Glass morphism */
         .glass {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        /* 3D Card effect */
-        .card-3d {
-            transform-style: preserve-3d;
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-        
-        .card-3d:hover {
-            transform: translateY(-15px) rotateX(5deg) rotateY(5deg);
-        }
-        
-        /* Floating animation */
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            33% { transform: translateY(-20px) rotate(2deg); }
-            66% { transform: translateY(-10px) rotate(-2deg); }
-        }
-        
-        .float {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        /* Pulse glow animation */
-        @keyframes pulseGlow {
-            0%, 100% { box-shadow: 0 0 20px rgba(168, 85, 247, 0.4); }
-            50% { box-shadow: 0 0 40px rgba(168, 85, 247, 0.8), 0 0 60px rgba(236, 72, 153, 0.6); }
-        }
-        
-        .pulse-glow {
-            animation: pulseGlow 3s ease-in-out infinite;
         }
         
         /* Gradient text */
         .gradient-text {
-            background: linear-gradient(135deg, #A855F7, #EC4899, #DC2626);
+            background: linear-gradient(135deg, var(--accent), var(--secondary), var(--danger));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
             background-size: 200% 200%;
             animation: gradientShift 3s ease infinite;
         }
@@ -89,1141 +127,1662 @@
             50% { background-position: 100% 50%; }
         }
         
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(2deg); }
+            66% { transform: translateY(-10px) rotate(-2deg); }
         }
         
-        /* Navbar blur */
-        .navbar-blur {
-            backdrop-filter: blur(20px);
-            background: rgba(0, 0, 0, 0.7);
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(168, 85, 247, 0.4); }
+            50% { box-shadow: 0 0 40px rgba(168, 85, 247, 0.8), 0 0 60px rgba(236, 72, 153, 0.6); }
         }
         
-        /* Custom button effects */
-        .btn-3d {
-            position: relative;
-            background: linear-gradient(135deg, #A855F7, #EC4899);
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
-        }
-        
-        .btn-3d:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(168, 85, 247, 0.5);
-        }
-        
-        .btn-3d:active {
-            transform: translateY(-1px);
-        }
-        
-        /* Stats counter animation */
-        @keyframes countUp {
-            from { opacity: 0; transform: translateY(20px); }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
         
-        .count-up {
-            animation: countUp 0.8s ease-out;
+        .float { animation: float 6s ease-in-out infinite; }
+        .pulse-glow { animation: pulseGlow 3s ease-in-out infinite; }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(20px);
+            transition: var(--transition);
+            padding: 1rem 0;
         }
         
-        /* Parallax effect */
-        .parallax {
-            transform: translateZ(0);
-            transition: transform 0.5s ease-out;
+        nav.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: var(--shadow-lg);
         }
         
-        /* Feature card hover */
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo img {
+            width: 40px;
+            height: 40px;
+            filter: drop-shadow(0 4px 8px rgba(124, 58, 237, 0.4));
+        }
+        
+        .logo-text {
+            font-size: 1.75rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            list-style: none;
+        }
+        
+        .nav-link {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn {
+            padding: 0.75rem 1.75rem;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(124, 58, 237, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--dark);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+        }
+        
+        @media (max-width: 1024px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: min(350px, 90vw);
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.95), rgba(10, 10, 10, 0.95));
+            backdrop-filter: blur(20px);
+            padding: 2rem;
+            transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .mobile-menu.active {
+            right: 0;
+        }
+        
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        
+        .close-menu {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .close-menu:hover {
+            color: var(--secondary);
+            transform: rotate(90deg);
+        }
+        
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .mobile-nav-link {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            border-left: 4px solid transparent;
+        }
+        
+        .mobile-nav-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-left-color: var(--secondary);
+            transform: translateX(10px);
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before,
+        .hero::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.2;
+            filter: blur(80px);
+        }
+        
+        .hero::before {
+            top: 20%;
+            left: 10%;
+            width: 400px;
+            height: 400px;
+            background: var(--primary);
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        .hero::after {
+            bottom: 20%;
+            right: 10%;
+            width: 500px;
+            height: 500px;
+            background: var(--secondary);
+            animation: float 25s ease-in-out infinite reverse;
+        }
+        
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(124, 58, 237, 0.2);
+            border: 1px solid rgba(124, 58, 237, 0.4);
+            padding: 0.75rem 1.5rem;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 1.5rem;
+            animation: slideUp 0.8s ease-out 0.2s both;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            animation: slideUp 0.8s ease-out 0.4s both;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            animation: slideUp 0.8s ease-out 0.6s both;
+        }
+        
+        @media (max-width: 1024px) {
+            .hero-buttons {
+                justify-content: center;
+            }
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            animation: slideUp 0.8s ease-out 0.8s both;
+        }
+        
+        @media (max-width: 1024px) {
+            .hero-stats {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+                align-items: center;
+            }
+        }
+        
+        .stat-item {
+            text-align: left;
+        }
+        
+        @media (max-width: 1024px) {
+            .stat-item {
+                text-align: center;
+            }
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 600;
+        }
+        
+        /* Phone Mockup */
+        .phone-mockup-container {
+            position: relative;
+            perspective: 1500px;
+        }
+        
+        .phone-mockup {
+            position: relative;
+            width: min(400px, 90vw);
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            transition: var(--transition);
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .phone-mockup:hover {
+            transform: scale(1.05);
+        }
+        
+        .phone-mockup img {
+            width: 100%;
+            border-radius: 40px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* Floating Cards */
+        .floating-card {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(124, 58, 237, 0.4);
+            border-radius: var(--radius);
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow-xl);
+            z-index: 10;
+            animation: float 5s ease-in-out infinite;
+        }
+        
+        .card-earnings {
+            top: 10%;
+            right: -50px;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(5, 150, 105, 0.2));
+            color: var(--success);
+        }
+        
+        .card-online {
+            bottom: 40%;
+            left: -40px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(37, 99, 235, 0.2));
+            color: var(--info);
+            animation-delay: 1.5s;
+        }
+        
+        .card-matches {
+            bottom: 10%;
+            right: -30px;
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.3), rgba(185, 28, 28, 0.2));
+            color: var(--danger);
+            animation-delay: 3s;
+        }
+        
+        @media (max-width: 1024px) {
+            .floating-card {
+                position: static;
+                display: inline-flex;
+                margin: 0.5rem;
+            }
+        }
+        
+        /* Widgets */
+        .widgets-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .widget {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            transition: var(--transition);
+        }
+        
+        .widget:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(124, 58, 237, 0.5);
+            transform: translateY(-5px);
+        }
+        
+        .widget-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .widget-label {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 0.25rem;
+        }
+        
+        .widget-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        /* Section */
+        .section {
+            padding: 6rem 0;
+            position: relative;
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 4rem;
+        }
+        
+        .section-label {
+            display: inline-block;
+            background: rgba(124, 58, 237, 0.2);
+            color: var(--accent);
+            padding: 0.5rem 1.5rem;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid rgba(124, 58, 237, 0.4);
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+        }
+        
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        
         .feature-card {
             background: rgba(20, 20, 20, 0.6);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(168, 85, 247, 0.2);
-            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            transition: var(--transition);
         }
         
         .feature-card:hover {
             background: rgba(30, 30, 30, 0.8);
             border-color: rgba(168, 85, 247, 0.5);
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(168, 85, 247, 0.3);
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
         }
         
-        /* Widget styles */
-        .widget {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 1.5rem;
-            transition: all 0.3s ease;
+        .feature-card img {
+            width: 100%;
+            border-radius: var(--radius);
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
         }
         
-        .widget:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(168, 85, 247, 0.5);
+        .feature-card:hover img {
             transform: scale(1.05);
         }
         
-        /* Heatmap visualization */
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+        }
+        
+        /* Earnings Section */
+        .earnings-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
+        }
+        
+        .earnings-card:hover {
+            transform: translateX(10px);
+            border-color: rgba(16, 185, 129, 0.4);
+        }
+        
+        .earnings-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--success), #059669);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .earnings-table {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .earnings-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: var(--radius-sm);
+            margin-bottom: 1rem;
+        }
+        
+        .earnings-row.highlight {
+            border: 2px solid var(--success);
+        }
+        
+        .earnings-amount {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--success);
+        }
+        
+        /* Heatmap */
+        .heatmap-container {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .heatmap-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 4px;
+            margin-top: 1rem;
+        }
+        
         .heatmap-cell {
-            width: 12px;
-            height: 12px;
-            border-radius: 2px;
-            margin: 2px;
-            transition: all 0.3s ease;
+            aspect-ratio: 1;
+            border-radius: 4px;
+            transition: var(--transition);
+            cursor: pointer;
         }
         
         .heatmap-cell:hover {
-            transform: scale(1.5);
+            transform: scale(1.2);
+            z-index: 10;
         }
         
-        /* Mobile menu animation */
-        .mobile-menu-enter {
-            animation: slideIn 0.3s ease-out;
+        .heatmap-cell.level-0 { background: #161B22; }
+        .heatmap-cell.level-1 { background: #0E4429; }
+        .heatmap-cell.level-2 { background: #006D32; }
+        .heatmap-cell.level-3 { background: #26A641; }
+        .heatmap-cell.level-4 { background: #39D353; }
+        
+        .heatmap-legend {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
         }
         
-        @keyframes slideIn {
-            from {
-                transform: translateX(100%);
-                opacity: 0;
+        .legend-box {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+        
+        /* Steps */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        
+        .step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 900;
+            margin: 0 auto 1.5rem;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .step h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .step p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+        }
+        
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: rgba(168, 85, 247, 0.4);
+        }
+        
+        .rating {
+            color: #FFD700;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        
+        .author-name {
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        
+        .author-location {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before,
+        .cta-section::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .cta-section::before {
+            width: 400px;
+            height: 400px;
+            top: -200px;
+            left: -100px;
+        }
+        
+        .cta-section::after {
+            width: 300px;
+            height: 300px;
+            bottom: -150px;
+            right: -50px;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+        
+        .btn-cta {
+            background: var(--white);
+            color: var(--dark);
+            padding: 1.25rem 2.5rem;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-cta:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--darker);
+            padding: 4rem 0 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        @media (max-width: 1024px) {
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
             }
-            to {
-                transform: translateX(0);
-                opacity: 1;
+        }
+        
+        @media (max-width: 640px) {
+            .footer-content {
+                grid-template-columns: 1fr;
             }
         }
         
-        /* Earnings badge */
-        .earnings-badge {
-            background: linear-gradient(135deg, #10B981, #059669);
-            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
         }
         
-        /* Custom scrollbar */
+        .footer-logo img {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .footer-logo-text {
+            font-size: 1.75rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .footer-description {
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-link {
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            transform: translateY(-3px);
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+            transform: translateX(5px);
+        }
+        
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+        
+        /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
         }
         
         ::-webkit-scrollbar-track {
-            background: #1a1a1a;
+            background: var(--darker);
         }
         
         ::-webkit-scrollbar-thumb {
-            background: linear-gradient(135deg, #A855F7, #EC4899);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             border-radius: 5px;
         }
         
-        /* Rotating 3D elements */
-        @keyframes rotate3d {
-            0% { transform: rotateY(0deg) rotateX(0deg); }
-            100% { transform: rotateY(360deg) rotateX(360deg); }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, var(--secondary), var(--danger));
         }
         
-        .rotate-3d {
-            animation: rotate3d 20s linear infinite;
-            transform-style: preserve-3d;
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section {
+                padding: 4rem 0;
+            }
         }
     </style>
 </head>
-<body class="text-white bg-black overflow-x-hidden">
-    <!-- Fixed Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 navbar-blur py-4 px-6 transition-all duration-300" id="navbar">
-        <div class="container mx-auto max-w-7xl">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                    <img src="Ssl.png" alt="SparkSync Logo" class="h-10 w-auto">
-                    <h1 class="text-3xl font-bold gradient-text">SparkSync</h1>
-                </div>
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#features" class="hover:text-purple-400 transition-colors duration-300">Features</a>
-                    <a href="#earn" class="hover:text-purple-400 transition-colors duration-300">Earn Money</a>
-                    <a href="#screenshots" class="hover:text-purple-400 transition-colors duration-300">Gallery</a>
-                    <a href="#testimonials" class="hover:text-purple-400 transition-colors duration-300">Reviews</a>
-                    <a href="#download" class="hover:text-purple-400 transition-colors duration-300">Download</a>
-                    <button onclick="openAuthModal('signin')" class="px-6 py-2 rounded-full border border-purple-400 hover:bg-purple-400 hover:text-white transition-all duration-300">
-                        Sign In
-                    </button>
-                </div>
-                <div class="md:hidden">
-                    <button id="menu-toggle" class="text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <img src="Ssl.png" alt="SparkSync Logo">
+                <span class="logo-text"><!-- EDITABLE:brand-name -->SparkSync<!-- /EDITABLE --></span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#earn" class="nav-link">Earn Money</a></li>
+                <li><a href="#screenshots" class="nav-link">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#download" class="btn btn-primary">Download</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
     
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-black bg-opacity-95 transform translate-x-full transition-transform duration-300 ease-in-out">
-        <div class="flex justify-end p-6">
-            <button id="close-menu" class="text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <img src="Ssl.png" alt="SparkSync" style="width: 35px; height: 35px;">
+                <span class="logo-text" style="font-size: 1.5rem;">SparkSync</span>
+            </div>
+            <button class="close-menu" id="closeMenuBtn">
+                <i class="fas fa-times"></i>
             </button>
         </div>
-        <div class="flex flex-col items-center text-center space-y-8 mt-10">
-            <a href="#features" class="text-xl hover:text-purple-400 transition-colors duration-300 mobile-link">Features</a>
-            <a href="#earn" class="text-xl hover:text-purple-400 transition-colors duration-300 mobile-link">Earn Money</a>
-            <a href="#screenshots" class="text-xl hover:text-purple-400 transition-colors duration-300 mobile-link">Gallery</a>
-            <a href="#testimonials" class="text-xl hover:text-purple-400 transition-colors duration-300 mobile-link">Reviews</a>
-            <a href="#download" class="text-xl hover:text-purple-400 transition-colors duration-300 mobile-link">Download</a>
-            <button onclick="openAuthModal('signin')" class="text-xl px-8 py-3 rounded-full border border-purple-400 hover:bg-purple-400 transition-all duration-300">
-                Sign In
-            </button>
+        <div class="mobile-nav-links">
+            <a href="#features" class="mobile-nav-link">Features</a>
+            <a href="#earn" class="mobile-nav-link">Earn Money</a>
+            <a href="#screenshots" class="mobile-nav-link">Gallery</a>
+            <a href="#testimonials" class="mobile-nav-link">Reviews</a>
+            <a href="#download" class="mobile-nav-link">Download</a>
         </div>
     </div>
-
-    <!-- Hero Section with Widgets -->
-    <header class="gradient-bg pt-32 pb-20 px-4 relative overflow-hidden">
-        <!-- Floating 3D elements -->
-        <div class="absolute top-20 left-10 w-32 h-32 bg-purple-600 opacity-20 rounded-full blur-3xl float"></div>
-        <div class="absolute bottom-20 right-10 w-40 h-40 bg-pink-600 opacity-20 rounded-full blur-3xl float" style="animation-delay: 2s;"></div>
-        
-        <div class="container mx-auto max-w-7xl relative z-10">
+    
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container">
             <!-- Widgets Row -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12" data-aos="fade-down">
+            <div class="widgets-row" data-aos="fade-down">
                 <div class="widget">
-                    <div class="flex items-center gap-3">
-                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center pulse-glow">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div class="widget-icon pulse-glow" style="background: linear-gradient(135deg, var(--success), #059669);">
+                            💸
                         </div>
                         <div>
-                            <p class="text-xs text-gray-400">Earn While Dating</p>
-                            <p class="text-lg font-bold gradient-text">50% Ad Revenue</p>
+                            <div class="widget-label">Earn While Dating</div>
+                            <div class="widget-value gradient-text">50% Ad Revenue</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="widget">
-                    <div class="flex items-center gap-3">
-                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center pulse-glow">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div class="widget-icon pulse-glow" style="background: linear-gradient(135deg, var(--info), #2563EB);">
+                            ✓
                         </div>
                         <div>
-                            <p class="text-xs text-gray-400">Active Users</p>
-                            <p class="text-lg font-bold text-green-400" id="online-count">18 Online</p>
+                            <div class="widget-label">Active Users</div>
+                            <div class="widget-value" style="color: var(--success);" id="online-count"><!-- EDITABLE:online-count -->18<!-- /EDITABLE --> Online</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="widget">
-                    <div class="flex items-center gap-3">
-                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-red-500 to-orange-500 flex items-center justify-center pulse-glow">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                            </svg>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div class="widget-icon pulse-glow" style="background: linear-gradient(135deg, var(--danger), #B91C1C);">
+                            ❤️
                         </div>
                         <div>
-                            <p class="text-xs text-gray-400">Success Rate</p>
-                            <p class="text-lg font-bold text-red-400">85% Matches</p>
+                            <div class="widget-label">Success Rate</div>
+                            <div class="widget-value" style="color: var(--danger);"><!-- EDITABLE:success-rate -->85<!-- /EDITABLE -->% Matches</div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
-                <div class="md:w-1/2 space-y-6" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="inline-block px-4 py-2 rounded-full glass border border-purple-400 text-sm mb-4">
-                        ✨ Now Available on Web & Mobile
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge" data-aos="fade-up">
+                        ✨ <!-- EDITABLE:hero-badge -->Now Available on Web & Mobile<!-- /EDITABLE -->
                     </div>
                     
-                    <h2 class="text-5xl md:text-6xl font-bold leading-tight">
-                        Find Love,<br>
-                        <span class="gradient-text">Make Connections</span>,<br>
-                        <span class="text-green-400">Earn Money</span>
-                    </h2>
+                    <h1 data-aos="fade-up" data-aos-delay="100">
+                        <!-- EDITABLE:hero-title-line1 -->Find Love,<!-- /EDITABLE --><br>
+                        <span class="gradient-text"><!-- EDITABLE:hero-title-line2 -->Make Connections<!-- /EDITABLE --></span>,<br>
+                        <span style="color: var(--success);"><!-- EDITABLE:hero-title-line3 -->Earn Money<!-- /EDITABLE --></span>
+                    </h1>
                     
-                    <p class="text-xl text-gray-300 leading-relaxed">
-                        SparkSync is revolutionizing dating in South Africa. Swipe, match, join local events, and <strong class="text-green-400">earn 50% of ad revenue</strong> just by using the app. Your perfect match is just a swipe away!
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        <!-- EDITABLE:hero-description -->SparkSync is revolutionizing dating in South Africa. Swipe, match, join local events, and <strong style="color: var(--success);">earn 50% of ad revenue</strong> just by using the app. Your perfect match is just a swipe away!<!-- /EDITABLE -->
                     </p>
                     
-                    <div class="flex flex-wrap gap-4 items-center">
-                        <button onclick="openAuthModal('signup')" class="btn-3d text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center gap-2">
-                            Get Started Free
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                            </svg>
-                        </button>
-                        
-                        <a href="https://loadly.io/sparksync" class="px-8 py-4 rounded-full glass border border-white hover:bg-white hover:text-black transition-all duration-300 font-semibold text-lg">
-                            Download Android
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                        <a href="<!-- EDITABLE:google-play-link -->https://loadly.io/sparksync<!-- /EDITABLE -->" class="btn btn-primary">
+                            <i class="fab fa-google-play"></i> Download Android
+                        </a>
+                        <a href="#features" class="btn btn-outline">
+                            <i class="fas fa-play-circle"></i> See How It Works
                         </a>
                     </div>
                     
-                    <div class="flex items-center gap-6 pt-4">
-                        <div class="flex -space-x-2">
-                            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 border-2 border-black"></div>
-                            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pink-400 to-red-400 border-2 border-black"></div>
-                            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-red-400 to-orange-400 border-2 border-black"></div>
-                            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-orange-400 to-yellow-400 border-2 border-black"></div>
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-item">
+                            <div class="stat-number"><!-- EDITABLE:stat-downloads -->200+<!-- /EDITABLE --></div>
+                            <div class="stat-label">Downloads</div>
                         </div>
-                        <div>
-                            <p class="text-sm text-gray-400">Join <strong class="text-white">200+</strong> users</p>
-                            <div class="flex text-yellow-400 text-sm">
-                                ⭐⭐⭐⭐⭐ <span class="text-gray-400 ml-2">4.8/5.0</span>
-                            </div>
+                        <div class="stat-item">
+                            <div class="stat-number"><!-- EDITABLE:stat-matches -->500K+<!-- /EDITABLE --></div>
+                            <div class="stat-label">Connections</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number"><!-- EDITABLE:stat-plans -->5K+<!-- /EDITABLE --></div>
+                            <div class="stat-label">Social Plans</div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="md:w-1/2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-gradient-to-r from-purple-600/30 to-pink-600/30 rounded-3xl filter blur-3xl opacity-70 rotate-6"></div>
-                        <img src="12.png" alt="SparkSync App Interface" class="relative mx-auto rounded-3xl shadow-2xl card-3d">
-                        
-                        <!-- Floating stats badges -->
-                        <div class="absolute -top-4 -right-4 glass rounded-2xl p-4 shadow-xl" data-aos="fade-left" data-aos-delay="600">
-                            <p class="text-2xl font-bold gradient-text">500K+</p>
-                            <p class="text-xs text-gray-400">Connections Made</p>
+                <div class="phone-mockup-container" data-aos="fade-left" data-aos-delay="300">
+                    <div class="phone-mockup">
+                        <img src="12.png" alt="SparkSync App Interface">
+                    </div>
+                    
+                    <!-- Floating Cards -->
+                    <div class="floating-card card-earnings" data-aos="fade-left" data-aos-delay="600">
+                        <i class="fas fa-coins" style="font-size: 1.5rem;"></i>
+                        <div>
+                            <strong style="display: block; font-size: 1.25rem;">R500+</strong>
+                            <div style="font-size: 0.85rem; opacity: 0.9;">Monthly Earnings</div>
                         </div>
-                        
-                        <div class="absolute -bottom-4 -left-4 earnings-badge rounded-2xl p-4 shadow-xl" data-aos="fade-right" data-aos-delay="800">
-                            <p class="text-2xl font-bold">💰 R500+</p>
-                            <p class="text-xs">Avg. Monthly Earnings</p>
+                    </div>
+                    
+                    <div class="floating-card card-online" data-aos="fade-left" data-aos-delay="800">
+                        <i class="fas fa-check-circle" style="font-size: 1.5rem;"></i>
+                        <div>
+                            <strong style="display: block; font-size: 1.25rem;">18 Online</strong>
+                            <div style="font-size: 0.85rem; opacity: 0.9;">Active Now</div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-card card-matches" data-aos="fade-left" data-aos-delay="1000">
+                        <i class="fas fa-heart" style="font-size: 1.5rem;"></i>
+                        <div>
+                            <strong style="display: block; font-size: 1.25rem;">85% Success</strong>
+                            <div style="font-size: 0.85rem; opacity: 0.9;">Match Rate</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-    <!-- Stats Section with Animation -->
-    <section class="py-16 px-4 bg-black relative">
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 left-1/4 w-64 h-64 bg-purple-600 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-pink-600 rounded-full blur-3xl"></div>
-        </div>
-        
-        <div class="container mx-auto max-w-7xl relative z-10">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div data-aos="zoom-in" data-aos-delay="100">
-                    <div class="text-5xl font-bold mb-2 gradient-text count-up" data-count="300">200+</div>
-                    <p class="text-gray-400">Downloads</p>
+    
+    <!-- Earn Money Section -->
+    <section id="earn" class="section" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05));">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label" style="background: rgba(16, 185, 129, 0.2); border-color: rgba(16, 185, 129, 0.4); color: var(--success);">
+                    💰 <!-- EDITABLE:earn-label -->NEW FEATURE<!-- /EDITABLE -->
                 </div>
-                <div data-aos="zoom-in" data-aos-delay="200">
-                    <div class="text-5xl font-bold mb-2 gradient-text count-up" data-count="85">85%</div>
-                    <p class="text-gray-400">Match Success</p>
-                </div>
-                <div data-aos="zoom-in" data-aos-delay="300">
-                    <div class="text-5xl font-bold mb-2 gradient-text count-up" data-count="5000">5K+</div>
-                    <p class="text-gray-400">Social Plans</p>
-                </div>
-                <div data-aos="zoom-in" data-aos-delay="400">
-                    <div class="text-5xl font-bold mb-2 gradient-text count-up" data-count="500000">500K+</div>
-                    <p class="text-gray-400">Connections</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Earn Money Section (NEW) -->
-    <section id="earn" class="py-20 px-4 gradient-bg relative overflow-hidden">
-        <div class="container mx-auto max-w-7xl relative z-10">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <div class="inline-block px-6 py-2 rounded-full earnings-badge text-sm font-semibold mb-4">
-                    💰 NEW FEATURE
-                </div>
-                <h2 class="text-5xl font-bold mb-4">Earn Money While You Date</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">SparkSync rewards you for being active! Earn 50% of ad revenue just by using the app.</p>
+                <h2 class="section-title">
+                    <!-- EDITABLE:earn-title -->Earn Money While You <span class="gradient-text">Date</span><!-- /EDITABLE -->
+                </h2>
+                <p class="section-subtitle">
+                    <!-- EDITABLE:earn-subtitle -->SparkSync rewards you for being active! Earn 50% of ad revenue just by using the app.<!-- /EDITABLE -->
+                </p>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                @media (max-width: 1024px) {
+                    <style>
+                        #earn > div > div:last-child {
+                            grid-template-columns: 1fr !important;
+                        }
+                    </style>
+                }
+                
                 <div data-aos="fade-right">
-                    <div class="glass rounded-3xl p-8 space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center flex-shrink-0">
-                                <span class="text-2xl">💸</span>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold mb-2">50% Ad Revenue Share</h3>
-                                <p class="text-gray-300">Every ad you see contributes to your earnings. The more you use SparkSync, the more you earn!</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
-                                <span class="text-2xl">📊</span>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold mb-2">Track Your Earnings</h3>
-                                <p class="text-gray-300">Real-time dashboard showing your daily, weekly, and monthly earnings with detailed analytics.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0">
-                                <span class="text-2xl">🔥</span>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold mb-2">Daily Usage Heatmap</h3>
-                                <p class="text-gray-300">Visualize your activity with an interactive heatmap. Build streaks and maximize your earnings!</p>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-xl p-4">
-                            <p class="text-sm text-yellow-400">⚠️ Earnings feature is only available on mobile app (Android & iOS). Web version for browsing only.</p>
-                        </div>
+                    <div class="earnings-card">
+                        <div class="earnings-icon">💸</div>
+                        <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">50% Ad Revenue Share</h3>
+                        <p style="color: rgba(255, 255, 255, 0.7);">
+                            <!-- EDITABLE:earn-revenue-desc -->Every ad you see contributes to your earnings. The more you use SparkSync, the more you earn!<!-- /EDITABLE -->
+                        </p>
+                    </div>
+                    
+                    <div class="earnings-card">
+                        <div class="earnings-icon">📊</div>
+                        <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Track Your Earnings</h3>
+                        <p style="color: rgba(255, 255, 255, 0.7);">
+                            <!-- EDITABLE:earn-tracking-desc -->Real-time dashboard showing your daily, weekly, and monthly earnings with detailed analytics.<!-- /EDITABLE -->
+                        </p>
+                    </div>
+                    
+                    <div class="earnings-card">
+                        <div class="earnings-icon">🔥</div>
+                        <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Daily Usage Heatmap</h3>
+                        <p style="color: rgba(255, 255, 255, 0.7);">
+                            <!-- EDITABLE:earn-heatmap-desc -->Visualize your activity with an interactive heatmap. Build streaks and maximize your earnings!<!-- /EDITABLE -->
+                        </p>
                     </div>
                 </div>
                 
-                <div data-aos="fade-left" class="space-y-6">
-                    <div class="glass rounded-3xl p-8">
-                        <h3 class="text-2xl font-bold mb-6 text-center">Sample Monthly Earnings</h3>
-                        <div class="space-y-4">
-                            <div class="flex justify-between items-center p-4 bg-black/30 rounded-xl">
-                                <span>Casual User (10 min/day)</span>
-                                <span class="text-2xl font-bold text-green-400">R50-R100</span>
-                            </div>
-                            <div class="flex justify-between items-center p-4 bg-black/30 rounded-xl">
-                                <span>Regular User (30 min/day)</span>
-                                <span class="text-2xl font-bold text-green-400">R150-R250</span>
-                            </div>
-                            <div class="flex justify-between items-center p-4 bg-black/30 rounded-xl border-2 border-green-400">
-                                <span>Active User (1 hr/day)</span>
-                                <span class="text-2xl font-bold text-green-400">R300-R500</span>
-                            </div>
+                <div data-aos="fade-left">
+                    <div class="earnings-table">
+                        <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.75rem;">
+                            💵 <!-- EDITABLE:earnings-table-title -->Sample Monthly Earnings<!-- /EDITABLE -->
+                        </h3>
+                        
+                        <div class="earnings-row">
+                            <span><!-- EDITABLE:earnings-casual-label -->Casual User (10 min/day)<!-- /EDITABLE --></span>
+                            <span class="earnings-amount"><!-- EDITABLE:earnings-casual-amount -->R50-R100<!-- /EDITABLE --></span>
+                        </div>
+                        
+                        <div class="earnings-row">
+                            <span><!-- EDITABLE:earnings-regular-label -->Regular User (30 min/day)<!-- /EDITABLE --></span>
+                            <span class="earnings-amount"><!-- EDITABLE:earnings-regular-amount -->R150-R250<!-- /EDITABLE --></span>
+                        </div>
+                        
+                        <div class="earnings-row highlight">
+                            <span><!-- EDITABLE:earnings-active-label -->Active User (1 hr/day)<!-- /EDITABLE --></span>
+                            <span class="earnings-amount"><!-- EDITABLE:earnings-active-amount -->R300-R500<!-- /EDITABLE --></span>
                         </div>
                     </div>
                     
                     <!-- Heatmap Preview -->
-                    <div class="glass rounded-3xl p-8">
-                        <h3 class="text-xl font-bold mb-4">Your Activity Heatmap</h3>
-                        <div class="flex flex-wrap gap-1">
-                            <div class="heatmap-cell bg-gray-700"></div>
-                            <div class="heatmap-cell bg-green-300"></div>
+                    <div class="heatmap-container">
+                        <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">
+                            🔥 <!-- EDITABLE:heatmap-title -->Your Activity Heatmap<!-- /EDITABLE -->
+                        </h3>
+                        <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin-bottom: 1rem;">
+                            <!-- EDITABLE:heatmap-description -->Track your daily activity and build streaks to maximize earnings!<!-- /EDITABLE -->
+                        </p>
+                        
+                        <div class="heatmap-grid">
+                            <!-- Week 1 -->
+                            <div class="heatmap-cell level-0"></div>
+                            <div class="heatmap-cell level-2"></div>
+                            <div class="heatmap-cell level-3"></div>
+                            <div class="heatmap-cell level-4"></div>
+                            <div class="heatmap-cell level-3"></div>
+                            <div class="heatmap-cell level-2"></div>
+                            <div class="heatmap-cell level-1"></div>
+                            <!-- Week 2 -->
+                            <div class="heatmap-cell level-2"></div>
+                            <div class="heatmap-cell level-4"></div>
+                            <div class="heatmap-cell level-4"></div>
+                            <div class="heatmap-cell level-3"></div>
+                            <div class="heatmap-cell level-4"></div>
+                            <div class="heatmap-cell level-3"></div>
+                            <div class="heatmap-cell level-2"></div>
+                            <!-- Week 3 -->
+                            <div class="heatmap-cell level-3"></div>
+                            <div class="heatmap-cell level-4"></div>
+                            <div class="heatmap-cell level-3"></div>
+                            <div class="heatmap-cell level-4"></div>
+                            <div class="heatmap-cell level-4"></div>
+                            <div class="heatmap-cell level-2"></div>
+                            <div class="heatmap-cell level-1"></div>
+                            <!-- Week 4 -->
+                            <div class="heatmap-cell level-2"></div>
+                            <div class="heatmap-cell level-3"></div>
+                            <div class="heatmap-cell level-4"></div>
+                            <div class="heatmap-cell level-4"></div>
+                            <div class="heatmap-cell level-3"></div>
+                            <div class="heatmap-cell level-2"></div>
+                            <div class="heatmap-cell level-0"></div>
                         </div>
-                        <p class="text-xs text-gray-400 mt-2">Build your streak and watch your earnings grow! 🔥</p>
+                        
+                        <div class="heatmap-legend">
+                            <span>Less</span>
+                            <div class="legend-box level-0"></div>
+                            <div class="legend-box level-1"></div>
+                            <div class="legend-box level-2"></div>
+                            <div class="legend-box level-3"></div>
+                            <div class="legend-box level-4"></div>
+                            <span>More</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Features Section -->
-    <section id="features" class="py-20 px-4 bg-black">
-        <div class="container mx-auto max-w-7xl">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-5xl font-bold mb-4">Powerful Features for <span class="gradient-text">Modern Dating</span></h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Everything you need to find love, make connections, and build meaningful relationships.</p>
+    <section id="features" class="section" style="background: var(--darker);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">✨ <!-- EDITABLE:features-label -->FEATURES<!-- /EDITABLE --></div>
+                <h2 class="section-title">
+                    <!-- EDITABLE:features-title -->Powerful Features for <span class="gradient-text">Modern Dating</span><!-- /EDITABLE -->
+                </h2>
+                <p class="section-subtitle">
+                    <!-- EDITABLE:features-subtitle -->Everything you need to find love, make connections, and build meaningful relationships.<!-- /EDITABLE -->
+                </p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="feature-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
-                    <img src="8.png" alt="Discover Plans" class="mx-auto mb-6 rounded-2xl w-full card-3d">
-                    <div class="text-5xl mb-4">📍</div>
-                    <h3 class="text-2xl font-bold mb-4">Discover Local Events</h3>
-                    <p class="text-gray-400">
-                        Explore social plans on an interactive map. Join coffee dates, group adventures, and romantic outings near you.
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="8.png" alt="Discover Plans">
+                    <div class="feature-icon">📍</div>
+                    <h3><!-- EDITABLE:feature-1-title -->Discover Local Events<!-- /EDITABLE --></h3>
+                    <p>
+                        <!-- EDITABLE:feature-1-desc -->Explore social plans on an interactive map. Join coffee dates, group adventures, and romantic outings near you.<!-- /EDITABLE -->
                     </p>
                 </div>
                 
-                <div class="feature-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
-                    <img src="6.png" alt="Create Plans" class="mx-auto mb-6 rounded-2xl w-full card-3d">
-                    <div class="text-5xl mb-4">✨</div>
-                    <h3 class="text-2xl font-bold mb-4">Create Your Own Plans</h3>
-                    <p class="text-gray-400">
-                        Host your own events and invite others. Whether casual or romantic, make connections happen on your terms.
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="6.png" alt="Create Plans">
+                    <div class="feature-icon">✨</div>
+                    <h3><!-- EDITABLE:feature-2-title -->Create Your Own Plans<!-- /EDITABLE --></h3>
+                    <p>
+                        <!-- EDITABLE:feature-2-desc -->Host your own events and invite others. Whether casual or romantic, make connections happen on your terms.<!-- /EDITABLE -->
                     </p>
                 </div>
                 
-                <div class="feature-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="300">
-                    <img src="7.png" alt="Chat Feature" class="mx-auto mb-6 rounded-2xl w-full card-3d">
-                    <div class="text-5xl mb-4">💬</div>
-                    <h3 class="text-2xl font-bold mb-4">Instant Messaging</h3>
-                    <p class="text-gray-400">
-                        Built-in chat for every plan. Coordinate, flirt, and build chemistry before meeting in person.
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="7.png" alt="Chat Feature">
+                    <div class="feature-icon">💬</div>
+                    <h3><!-- EDITABLE:feature-3-title -->Instant Messaging<!-- /EDITABLE --></h3>
+                    <p>
+                        <!-- EDITABLE:feature-3-desc -->Built-in chat for every plan. Coordinate, flirt, and build chemistry before meeting in person.<!-- /EDITABLE -->
                     </p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- New Features Section -->
-    <section class="py-20 px-4 gradient-bg">
-        <div class="container mx-auto max-w-7xl">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <div class="inline-block px-6 py-2 rounded-full glass border border-purple-400 text-sm font-semibold mb-4">
-                    🚀 JUST LAUNCHED
-                </div>
-                <h2 class="text-5xl font-bold mb-4">What's New in SparkSync</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">We're constantly improving to give you the best dating experience.</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Enhanced Profiles -->
-                <div class="glass rounded-3xl p-8" data-aos="fade-right" data-aos-delay="100">
-                    <div class="flex items-start gap-4">
-                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0 pulse-glow">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                            </svg>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-bold mb-3">Enhanced Profile Builder</h3>
-                            <p class="text-gray-300 mb-4">Add more about yourself with new fields for interests, lifestyle, values, and more. Help your perfect match find you!</p>
-                            <ul class="space-y-2 text-sm text-gray-400">
-                                <li class="flex items-center gap-2">
-                                    <span class="text-green-400">✓</span> Extended bio sections
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-green-400">✓</span> Lifestyle preferences
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-green-400">✓</span> Detailed interests & hobbies
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Feedback System -->
-                <div class="glass rounded-3xl p-8" data-aos="fade-left" data-aos-delay="200">
-                    <div class="flex items-start gap-4">
-                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0 pulse-glow">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                            </svg>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-bold mb-3">In-App Feedback & Support</h3>
-                            <p class="text-gray-300 mb-4">Your voice matters! Share feedback, report issues, and get support directly within the app.</p>
-                            <ul class="space-y-2 text-sm text-gray-400">
-                                <li class="flex items-center gap-2">
-                                    <span class="text-green-400">✓</span> 24/7 support chat
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-green-400">✓</span> Feature suggestions
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-green-400">✓</span> Quick issue resolution
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Voting System -->
-                <div class="glass rounded-3xl p-8" data-aos="fade-right" data-aos-delay="300">
-                    <div class="flex items-start gap-4">
-                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center flex-shrink-0 pulse-glow">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                            </svg>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-bold mb-3">Community Feature Voting</h3>
-                            <p class="text-gray-300 mb-4">Vote on upcoming features! Help shape the future of SparkSync by choosing what gets built next.</p>
-                            <ul class="space-y-2 text-sm text-gray-400">
-                                <li class="flex items-center gap-2">
-                                    <span class="text-green-400">✓</span> Vote on feature ideas
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-green-400">✓</span> Submit your own suggestions
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="text-green-400">✓</span> See what's coming next
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Web Version -->
-                <div class="glass rounded-3xl p-8" data-aos="fade-left" data-aos-delay="400">
-                    <div class="flex items-start gap-4">
-                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center flex-shrink-0 pulse-glow">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                            </svg>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-bold mb-3">Web Version Available</h3>
-                            <p class="text-gray-300 mb-4">Access SparkSync from any browser! Browse profiles and manage your account on desktop.</p>
-                            <div class="bg-blue-500/10 border border-blue-500/30 rounded-xl p-3 mt-3">
-                                <p class="text-sm text-blue-400">💡 Note: Earnings feature is mobile-only to ensure accurate tracking.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- How It Works -->
-    <section class="py-20 px-4 bg-black">
-        <div class="container mx-auto max-w-7xl">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-5xl font-bold mb-4">How SparkSync Works</h2>
-                <p class="text-xl text-gray-400">Your journey to finding love in three simple steps</p>
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">🚀 <!-- EDITABLE:how-label -->SIMPLE PROCESS<!-- /EDITABLE --></div>
+                <h2 class="section-title">
+                    <!-- EDITABLE:how-title -->How SparkSync <span class="gradient-text">Works</span><!-- /EDITABLE -->
+                </h2>
+                <p class="section-subtitle">
+                    <!-- EDITABLE:how-subtitle -->Your journey to finding love in three simple steps<!-- /EDITABLE -->
+                </p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="text-center relative" data-aos="fade-up" data-aos-delay="100">
-                    <div class="inline-block p-8 glass rounded-3xl mb-6 card-3d">
-                        <div class="w-20 h-20 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mx-auto pulse-glow">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="absolute top-12 left-1/2 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500 hidden md:block" style="transform: translateX(0%); width: calc(100% + 3rem);"></div>
-                    <h3 class="text-2xl font-bold mb-4">1. Real Connections</h3>
-                    <p class="text-gray-400">Browse profiles and swipe right on people you like. When they like you back, it's a match!</p>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <h3><!-- EDITABLE:step-1-title -->Real Connections<!-- /EDITABLE --></h3>
+                    <p>
+                        <!-- EDITABLE:step-1-desc -->Browse profiles and swipe right on people you like. When they like you back, it's a match!<!-- /EDITABLE -->
+                    </p>
                 </div>
                 
-                <div class="text-center relative" data-aos="fade-up" data-aos-delay="200">
-                    <div class="inline-block p-8 glass rounded-3xl mb-6 card-3d">
-                        <div class="w-20 h-20 rounded-full bg-gradient-to-br from-pink-500 to-red-500 flex items-center justify-center mx-auto pulse-glow">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="absolute top-12 left-1/2 w-full h-1 bg-gradient-to-r from-pink-500 to-red-500 hidden md:block" style="transform: translateX(0%); width: calc(100% + 3rem);"></div>
-                    <h3 class="text-2xl font-bold mb-4">2. Request New Features</h3>
-                    <p class="text-gray-400">Discover local events or create your own. Meet people in real life through shared experiences.</p>
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <h3><!-- EDITABLE:step-2-title -->Join Local Events<!-- /EDITABLE --></h3>
+                    <p>
+                        <!-- EDITABLE:step-2-desc -->Discover local events or create your own. Meet people in real life through shared experiences.<!-- /EDITABLE -->
+                    </p>
                 </div>
                 
-                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="inline-block p-8 glass rounded-3xl mb-6 card-3d">
-                        <div class="w-20 h-20 rounded-full bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center mx-auto pulse-glow">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">3. Chat & Connect</h3>
-                    <p class="text-gray-400">Use instant chat to get to know each other. Build chemistry and turn matches into relationships.</p>
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <h3><!-- EDITABLE:step-3-title -->Chat & Connect<!-- /EDITABLE --></h3>
+                    <p>
+                        <!-- EDITABLE:step-3-desc -->Use instant chat to get to know each other. Build chemistry and turn matches into relationships.<!-- /EDITABLE -->
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Screenshots Gallery -->
-    <section id="screenshots" class="py-20 px-4 gradient-bg">
-        <div class="container mx-auto max-w-7xl">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-5xl font-bold mb-4">SparkSync in Action</h2>
-                <p class="text-xl text-gray-300">Experience the beautiful, intuitive interface designed for modern dating</p>
+    <section id="screenshots" class="section" style="background: var(--darker);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">📱 <!-- EDITABLE:gallery-label -->GALLERY<!-- /EDITABLE --></div>
+                <h2 class="section-title">
+                    <!-- EDITABLE:gallery-title -->SparkSync in <span class="gradient-text">Action</span><!-- /EDITABLE -->
+                </h2>
+                <p class="section-subtitle">
+                    <!-- EDITABLE:gallery-subtitle -->Experience the beautiful, intuitive interface designed for modern dating<!-- /EDITABLE -->
+                </p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem;">
                 <div data-aos="zoom-in" data-aos-delay="100">
-                    <div class="glass rounded-3xl p-4 card-3d">
-                        <img src="13.png" alt="Swipe Interface" class="rounded-2xl w-full mb-4">
-                        <p class="text-center text-gray-300 font-semibold">Swipe & Match</p>
+                    <div class="glass" style="border-radius: var(--radius-lg); padding: 1.5rem;">
+                        <img src="13.png" alt="Swipe Interface" style="border-radius: var(--radius); width: 100%; margin-bottom: 1rem;">
+                        <p style="text-align: center; font-weight: 600;"><!-- EDITABLE:screenshot-1-caption -->Swipe & Match<!-- /EDITABLE --></p>
                     </div>
                 </div>
                 
                 <div data-aos="zoom-in" data-aos-delay="200">
-                    <div class="glass rounded-3xl p-4 card-3d">
-                        <img src="14.png" alt="Social Plans Map" class="rounded-2xl w-full mb-4">
-                        <p class="text-center text-gray-300 font-semibold">Local Events Map</p>
+                    <div class="glass" style="border-radius: var(--radius-lg); padding: 1.5rem;">
+                        <img src="14.png" alt="Social Plans Map" style="border-radius: var(--radius); width: 100%; margin-bottom: 1rem;">
+                        <p style="text-align: center; font-weight: 600;"><!-- EDITABLE:screenshot-2-caption -->Local Events Map<!-- /EDITABLE --></p>
                     </div>
                 </div>
                 
                 <div data-aos="zoom-in" data-aos-delay="300">
-                    <div class="glass rounded-3xl p-4 card-3d">
-                        <img src="9.png" alt="Chat Feature" class="rounded-2xl w-full mb-4">
-                        <p class="text-center text-gray-300 font-semibold">Instant Messaging</p>
+                    <div class="glass" style="border-radius: var(--radius-lg); padding: 1.5rem;">
+                        <img src="9.png" alt="Chat Feature" style="border-radius: var(--radius); width: 100%; margin-bottom: 1rem;">
+                        <p style="text-align: center; font-weight: 600;"><!-- EDITABLE:screenshot-3-caption -->Instant Messaging<!-- /EDITABLE --></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Testimonials -->
-    <section id="testimonials" class="py-20 px-4 bg-black">
-        <div class="container mx-auto max-w-7xl">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-5xl font-bold mb-4">Love Stories from <span class="gradient-text">South Africa</span></h2>
-                <p class="text-xl text-gray-400">Join thousands who found their perfect match on SparkSync</p>
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">⭐ <!-- EDITABLE:testimonials-label -->TESTIMONIALS<!-- /EDITABLE --></div>
+                <h2 class="section-title">
+                    <!-- EDITABLE:testimonials-title -->Love Stories from <span class="gradient-text">South Africa</span><!-- /EDITABLE -->
+                </h2>
+                <p class="section-subtitle">
+                    <!-- EDITABLE:testimonials-subtitle -->Join thousands who found their perfect match on SparkSync<!-- /EDITABLE -->
+                </p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass rounded-3xl p-8 border-l-4 border-purple-500" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex text-yellow-400 mb-4">
-                        ⭐⭐⭐⭐⭐
-                    </div>
-                    <p class="text-gray-300 mb-6 italic">
-                        "The earning feature is amazing! I've made R180 this month just from chatting and swiping. Plus I met someone special at a game night plan!"
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        <!-- EDITABLE:testimonial-1-text -->The earning feature is amazing! I've made R180 this month just from chatting and swiping. Plus I met someone special at a game night plan!<!-- /EDITABLE -->
                     </p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-400 to-pink-400"></div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><!-- EDITABLE:testimonial-1-initials -->LM<!-- /EDITABLE --></div>
                         <div>
-                            <p class="font-bold">Lindiwe M.</p>
-                            <p class="text-sm text-gray-400">Cape Town</p>
+                            <div class="author-name"><!-- EDITABLE:testimonial-1-name -->Lindiwe M.<!-- /EDITABLE --></div>
+                            <div class="author-location"><!-- EDITABLE:testimonial-1-location -->Cape Town<!-- /EDITABLE --></div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="glass rounded-3xl p-8 border-l-4 border-pink-500" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex text-yellow-400 mb-4">
-                        ⭐⭐⭐⭐⭐
-                    </div>
-                    <p class="text-gray-300 mb-6 italic">
-                        "Created a hiking plan and met the most incredible people. The heatmap feature keeps me motivated to stay active. Found my partner here!"
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        <!-- EDITABLE:testimonial-2-text -->Created a hiking plan and met the most incredible people. The heatmap feature keeps me motivated to stay active. Found my partner here!<!-- /EDITABLE -->
                     </p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-pink-400 to-red-400"></div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><!-- EDITABLE:testimonial-2-initials -->TS<!-- /EDITABLE --></div>
                         <div>
-                            <p class="font-bold">Thabo S.</p>
-                            <p class="text-sm text-gray-400">Johannesburg</p>
+                            <div class="author-name"><!-- EDITABLE:testimonial-2-name -->Thabo S.<!-- /EDITABLE --></div>
+                            <div class="author-location"><!-- EDITABLE:testimonial-2-location -->Johannesburg<!-- /EDITABLE --></div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="glass rounded-3xl p-8 border-l-4 border-red-500" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex text-yellow-400 mb-4">
-                        ⭐⭐⭐⭐⭐
-                    </div>
-                    <p class="text-gray-300 mb-6 italic">
-                        "Love the new voting feature! I suggested a video chat option and it's actually being considered. This app really listens to users!"
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        <!-- EDITABLE:testimonial-3-text -->Love the new voting feature! I suggested a video chat option and it's actually being considered. This app really listens to users!<!-- /EDITABLE -->
                     </p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-red-400 to-orange-400"></div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><!-- EDITABLE:testimonial-3-initials -->NK<!-- /EDITABLE --></div>
                         <div>
-                            <p class="font-bold">Nia K.</p>
-                            <p class="text-sm text-gray-400">Durban</p>
+                            <div class="author-name"><!-- EDITABLE:testimonial-3-name -->Nia K.<!-- /EDITABLE --></div>
+                            <div class="author-location"><!-- EDITABLE:testimonial-3-location -->Durban<!-- /EDITABLE --></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Download Section -->
-    <!-- INSTANT ACCESS SECTION - REPLACE YOUR DOWNLOAD SECTION -->
-<section id="download" class="py-20 px-4 gradient-bg">
-    <div class="container mx-auto max-w-7xl">
-        <div class="text-center" data-aos="fade-up">
-            <h2 class="text-5xl font-bold mb-6 gradient-text">🚀 Get INSTANT Access NOW</h2>
-            <p class="text-2xl mb-12 text-gray-300">Join 200K+ users earning money. No wait!</p>
+    
+    <!-- Download/CTA Section -->
+    <section id="download" class="section cta-section">
+        <div class="container cta-content">
+            <div class="section-label" style="background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.3); color: var(--white);" data-aos="fade-up">
+                🚀 <!-- EDITABLE:cta-label -->GET STARTED<!-- /EDITABLE -->
+            </div>
             
-            <!-- BIG PROMINENT BUTTONS -->
-            <div class="max-w-2xl mx-auto space-y-6 mb-12">
-                <div class="glass rounded-3xl p-8 text-center">
-                    <div class="text-6xl mb-6">⚡</div>
-                    <h3 class="text-3xl font-bold mb-4">1-Click Instant Access</h3>
-                    <p class="text-xl text-gray-300 mb-8">Join tester group → Get app immediately</p>
-                    
-                    <div class="space-y-4">
-                        <a href="https://groups.google.com/g/playstoreearningapps" 
-                           class="block w-full btn-3d ...">👥 Join Testers (10 sec)</a>
-                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-                            </svg>
-                        </a>
-                        
-                        <div class="text-sm text-yellow-400 bg-yellow-500/10 p-3 rounded-xl">
-                            ✅ Takes 10 seconds • No approval needed • Instant app access
-                        </div>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                <!-- EDITABLE:cta-title -->Ready to Find Your <span style="color: var(--white);">Perfect Match</span>?<!-- /EDITABLE -->
+            </h2>
+            
+            <p style="font-size: 1.3rem; margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.9);" data-aos="fade-up" data-aos-delay="200">
+                <!-- EDITABLE:cta-description -->Join thousands of South Africans finding love and earning money on SparkSync<!-- /EDITABLE -->
+            </p>
+            
+            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 3rem;" data-aos="fade-up" data-aos-delay="300">
+                <!-- EDITABLE:cta-features -->Free to download • No hidden fees • Start earning today<!-- /EDITABLE -->
+            </p>
+            
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="<!-- EDITABLE:google-play-download-link -->https://loadly.io/sparksync<!-- /EDITABLE -->" class="btn btn-cta">
+                    <i class="fab fa-google-play"></i>
+                    <div>
+                        <div style="font-size: 0.75rem;">GET IT ON</div>
+                        <div style="font-size: 1.1rem;">Google Play</div>
                     </div>
-                </div>
+                </a>
                 
-                <a href="YOUR-PLAY-STORE-OPT-IN-LINK" 
-                   class="block w-full btn-3d text-white px-8 py-6 rounded-2xl font-bold text-xl flex items-center justify-center gap-3 mx-auto max-w-md bg-green-600 hover:bg-green-500">
-                    📱 Download App Now (After Joining)
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                    </svg>
+                <a href="<!-- EDITABLE:app-store-download-link -->#<!-- /EDITABLE -->" class="btn btn-cta">
+                    <i class="fab fa-apple"></i>
+                    <div>
+                        <div style="font-size: 0.75rem;">Download on the</div>
+                        <div style="font-size: 1.1rem;">App Store</div>
+                    </div>
                 </a>
             </div>
-            
-            <div class="glass rounded-2xl p-6 max-w-4xl mx-auto text-center">
-                <p class="text-lg mb-4">👉 <strong>Step 1:</strong> Click "Join Testers" → Use your Google Play email</p>
-                <p class="text-lg mb-4">👉 <strong>Step 2:</strong> Click "Download App Now" → Install instantly from Play Store</p>
-                <p class="text-lg text-green-400 font-bold">💰 Start earning money immediately!</p>
-            </div>
         </div>
-    </div>
-</section>
-
+    </section>
+    
     <!-- Footer -->
-    <footer class="py-12 px-4 bg-black border-t border-gray-800">
-        <div class="container mx-auto max-w-7xl">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
+    <footer>
+        <div class="container">
+            <div class="footer-content">
                 <div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <img src="Ssl.png" alt="SparkSync" class="h-8">
-                        <h3 class="text-2xl font-bold gradient-text">SparkSync</h3>
+                    <div class="footer-logo">
+                        <img src="Ssl.png" alt="SparkSync">
+                        <span class="footer-logo-text"><!-- EDITABLE:footer-brand -->SparkSync<!-- /EDITABLE --></span>
                     </div>
-                    <p class="text-gray-400 text-sm">South Africa's premier dating app for meaningful connections.</p>
+                    <p class="footer-description">
+                        <!-- EDITABLE:footer-description -->South Africa's premier dating app for meaningful connections. Find love, make friends, and earn money while you date.<!-- /EDITABLE -->
+                    </p>
+                    <div class="social-links">
+                        <a href="<!-- EDITABLE:twitter-link -->#<!-- /EDITABLE -->" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="<!-- EDITABLE:instagram-link -->#<!-- /EDITABLE -->" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="<!-- EDITABLE:facebook-link -->#<!-- /EDITABLE -->" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="<!-- EDITABLE:youtube-link -->#<!-- /EDITABLE -->" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
                 </div>
                 
-                <div>
-                    <h4 class="font-bold mb-4">Product</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#features" class="hover:text-purple-400 transition-colors">Features</a></li>
-                        <li><a href="#earn" class="hover:text-purple-400 transition-colors">Earn Money</a></li>
-                        <li><a href="#download" class="hover:text-purple-400 transition-colors">Download</a></li>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#earn">Earn Money</a></li>
+                        <li><a href="#download">Download</a></li>
                     </ul>
                 </div>
                 
-                <div>
-                    <h4 class="font-bold mb-4">Company</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-purple-400 transition-colors">About Us</a></li>
-                        <li><a href="#testimonials" class="hover:text-purple-400 transition-colors">Testimonials</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors">Contact</a></li>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 
-                <div>
-                    <h4 class="font-bold mb-4">Legal</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-purple-400 transition-colors">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors">Cookie Policy</a></li>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
                     </ul>
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm">© 2025 SparkSync. All rights reserved.</p>
-                <div class="flex gap-4 mt-4 md:mt-0">
-                    <a href="#" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-purple-500 transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-purple-500 transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-purple-500 transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
-                        </svg>
-                    </a>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; <!-- EDITABLE:copyright-year -->2025<!-- /EDITABLE --> <!-- EDITABLE:copyright-name -->SparkSync<!-- /EDITABLE -->. All rights reserved.</p>
+                <p style="margin-top: 0.5rem;">
+                    <!-- EDITABLE:footer-tagline -->Made with ❤️ for South Africa<!-- /EDITABLE -->
+                </p>
             </div>
         </div>
     </footer>
-
-    <!-- Auth Modal -->
-    <div id="authModal" class="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center hidden backdrop-blur-sm">
-        <div class="glass rounded-3xl p-8 max-w-md w-full mx-4 relative" data-aos="zoom-in">
-            <button onclick="closeAuthModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full glass flex items-center justify-center hover:bg-red-500 transition-all">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-            
-            <div id="authContent">
-                <!-- Sign Up Form -->
-                <div id="signupForm">
-                    <div class="text-center mb-6">
-                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center mx-auto mb-4 pulse-glow">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                            </svg>
-                        </div>
-                        <h2 class="text-3xl font-bold gradient-text mb-2">Join SparkSync</h2>
-                        <p class="text-gray-400">Get notified when we launch on Google Play</p>
-                    </div>
-                    
-                    <form onsubmit="handleSignup(event)" class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Full Name</label>
-                            <input type="text" required class="w-full px-4 py-3 rounded-xl glass border border-gray-600 focus:border-purple-500 focus:outline-none transition-all" placeholder="John Doe">
-                        </div>
-                        
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Email Address</label>
-                            <input type="email" required class="w-full px-4 py-3 rounded-xl glass border border-gray-600 focus:border-purple-500 focus:outline-none transition-all" placeholder="john@example.com">
-                        </div>
-                        
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Password</label>
-                            <input type="password" required class="w-full px-4 py-3 rounded-xl glass border border-gray-600 focus:border-purple-500 focus:outline-none transition-all" placeholder="••••••••">
-                        </div>
-                        
-                        <button type="submit" class="w-full btn-3d text-white px-6 py-4 rounded-xl font-semibold">
-                            Sign Up & Get Notified
-                        </button>
-                    </form>
-                    
-                    <p class="text-center text-sm text-gray-400 mt-6">
-                        Already have an account? 
-                        <button onclick="switchToSignin()" class="text-purple-400 hover:text-purple-300 font-semibold">Sign In</button>
-                    </p>
-                </div>
-                
-                <!-- Sign In Form -->
-                <div id="signinForm" class="hidden">
-                    <div class="text-center mb-6">
-                        <div class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center mx-auto mb-4 pulse-glow">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
-                            </svg>
-                        </div>
-                        <h2 class="text-3xl font-bold gradient-text mb-2">Welcome Back</h2>
-                        <p class="text-gray-400">Sign in to your SparkSync account</p>
-                    </div>
-                    
-                    <form onsubmit="handleSignin(event)" class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Email Address</label>
-                            <input type="email" required class="w-full px-4 py-3 rounded-xl glass border border-gray-600 focus:border-purple-500 focus:outline-none transition-all" placeholder="john@example.com">
-                        </div>
-                        
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Password</label>
-                            <input type="password" required class="w-full px-4 py-3 rounded-xl glass border border-gray-600 focus:border-purple-500 focus:outline-none transition-all" placeholder="••••••••">
-                        </div>
-                        
-                        <div class="flex items-center justify-between text-sm">
-                            <label class="flex items-center gap-2">
-                                <input type="checkbox" class="rounded">
-                                <span class="text-gray-400">Remember me</span>
-                            </label>
-                            <a href="#" class="text-purple-400 hover:text-purple-300">Forgot password?</a>
-                        </div>
-                        
-                        <button type="submit" class="w-full btn-3d text-white px-6 py-4 rounded-xl font-semibold">
-                            Sign In
-                        </button>
-                    </form>
-                    
-                    <p class="text-center text-sm text-gray-400 mt-6">
-                        Don't have an account? 
-                        <button onclick="switchToSignup()" class="text-purple-400 hover:text-purple-300 font-semibold">Sign Up</button>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         // Initialize AOS
         AOS.init({
-            duration: 800,
+            duration: 1000,
             once: true,
-            offset: 100
+            offset: 100,
+            easing: 'ease-out-cubic'
         });
-
+        
         // Mobile Menu
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const closeMenu = document.getElementById('close-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.remove('translate-x-full');
-        });
-
-        closeMenu.addEventListener('click', () => {
-            mobileMenu.classList.add('translate-x-full');
-        });
-
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+        
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        closeMenuBtn.addEventListener('click', closeMobileMenu);
+        
         mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('translate-x-full');
-            });
+            link.addEventListener('click', closeMobileMenu);
         });
-
+        
+        // Close menu on outside click
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                closeMobileMenu();
+            }
+        });
+        
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
         let lastScroll = 0;
-
+        
         window.addEventListener('scroll', () => {
             const currentScroll = window.pageYOffset;
             
             if (currentScroll > 50) {
-                navbar.classList.add('py-2', 'shadow-lg');
-                navbar.classList.remove('py-4');
+                navbar.classList.add('scrolled');
             } else {
-                navbar.classList.add('py-4');
-                navbar.classList.remove('py-2', 'shadow-lg');
+                navbar.classList.remove('scrolled');
             }
             
             lastScroll = currentScroll;
         });
-
-        // Auth Modal Functions
-        function openAuthModal(type) {
-            const modal = document.getElementById('authModal');
-            modal.classList.remove('hidden');
-            
-            if (type === 'signup') {
-                switchToSignup();
-            } else {
-                switchToSignin();
-            }
-        }
-
-        function closeAuthModal() {
-            const modal = document.getElementById('authModal');
-            modal.classList.add('hidden');
-        }
-
-        function switchToSignup() {
-            document.getElementById('signupForm').classList.remove('hidden');
-            document.getElementById('signinForm').classList.add('hidden');
-        }
-
-        function switchToSignin() {
-            document.getElementById('signinForm').classList.remove('hidden');
-            document.getElementById('signupForm').classList.add('hidden');
-        }
-
-        function handleSignup(e) {
-            e.preventDefault();
-            // Add your signup logic here
-            alert('Thank you for signing up! We\'ll notify you when SparkSync launches on Google Play.');
-            closeAuthModal();
-        }
-
-        function handleSignin(e) {
-            e.preventDefault();
-            // Add your signin logic here
-            alert('Welcome back to SparkSync!');
-            closeAuthModal();
-        }
-
-        // Close modal on outside click
-        document.getElementById('authModal').addEventListener('click', (e) => {
-            if (e.target.id === 'authModal') {
-                closeAuthModal();
-            }
-        });
-
-        // Animated counter for stats
-        const animateCounter = (element, target) => {
-            let current = 0;
-            const increment = target / 100;
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    element.textContent = target.toLocaleString() + (element.textContent.includes('+') ? '+' : '%');
-                    clearInterval(timer);
-                } else {
-                    element.textContent = Math.floor(current).toLocaleString() + (element.textContent.includes('+') ? '+' : '%');
-                }
-            }, 20);
-        };
-
-        // Trigger counter animation on scroll
-        const counters = document.querySelectorAll('.count-up');
-        const observerOptions = {
-            threshold: 0.5,
-            rootMargin: '0px'
-        };
-
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
-                    const target = parseInt(entry.target.getAttribute('data-count'));
-                    animateCounter(entry.target, target);
-                    entry.target.classList.add('animated');
-                }
-            });
-        }, observerOptions);
-
-        counters.forEach(counter => counterObserver.observe(counter));
-
-        // Update online count dynamically
-        function updateOnlineCount() {
-            const onlineCount = document.getElementById('online-count');
-            const count = Math.floor(Math.random() * 50) + 15;
-            onlineCount.textContent = `${count} Online`;
-        }
-
-        setInterval(updateOnlineCount, 5000);
-
-        // Parallax effect on scroll
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallaxElements = document.querySelectorAll('.parallax');
-            
-            parallaxElements.forEach(element => {
-                const speed = element.dataset.speed || 0.5;
-                element.style.transform = `translateY(${scrolled * speed}px)`;
-            });
-        });
-
-        // 3D card tilt effect
-        const cards = document.querySelectorAll('.card-3d');
         
-        cards.forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                const rotateX = (y - centerY) / 10;
-                const rotateY = (centerX - x) / 10;
-                
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-            });
-        });
-
-        // Smooth scroll for anchor links
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                const target = document.querySelector(href);
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    e.preventDefault();
+                    closeMobileMenu();
+                    
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
                     });
                 }
             });
         });
-
-        // Loading animation
-        window.addEventListener('load', () => {
-            document.body.classList.add('loaded');
-        });
-
-        // Easter egg: Konami code
-        let konamiCode = [];
-        const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
         
-        window.addEventListener('keydown', (e) => {
-            konamiCode.push(e.key);
-            konamiCode = konamiCode.slice(-10);
-            
-            if (konamiCode.join(',') === konamiSequence.join(',')) {
-                document.body.style.animation = 'rotate3d 2s ease-in-out';
-                setTimeout(() => {
-                    document.body.style.animation = '';
-                    alert('🎉 Easter egg found! Enjoy 10% off your first premium subscription!');
-                }, 2000);
-            }
-        });
+        // Dynamic online count
+        function updateOnlineCount() {
+            const onlineCount = document.getElementById('online-count');
+            const currentCount = parseInt(onlineCount.textContent);
+            const change = Math.floor(Math.random() * 5) - 2;
+            const newCount = Math.max(15, Math.min(25, currentCount + change));
+            onlineCount.textContent = `${newCount} Online`;
+        }
+        
+        setInterval(updateOnlineCount, 10000);
+        
+        // Performance monitoring
+        if (window.performance) {
+            const perfData = window.performance.timing;
+            const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+            console.log(`Page loaded in ${pageLoadTime}ms`);
+        }
+        
+        // Console branding
+        console.log('%c❤️ SparkSync', 'font-size: 24px; font-weight: bold; background: linear-gradient(135deg, #7C3AED, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
+        console.log('%cFind Love, Make Connections, Earn Money', 'font-size: 16px; color: #A855F7;');
     </script>
 </body>
-</html>900"></div>
-                            <div class="heatmap-cell bg-green-700"></div>
-                            <div class="heatmap-cell bg-green-500"></div>
-                            <div class="heatmap-cell bg-green-400"></div>
-                            <div class="heatmap-cell bg-green-300"></div>
-                            <div class="heatmap-cell bg-green-500"></div>
-                            <div class="heatmap-cell bg-gray-700"></div>
-                            <div class="heatmap-cell bg-green-900"></div>
-                            <div class="heatmap-cell bg-green-700"></div>
-                            <div class="heatmap-cell bg-green-900"></div>
-                            <div class="heatmap-cell bg-green-500"></div>
-                            <div class="heatmap-cell bg-green-400"></div>
-                            <div class="heatmap-cell bg-green-
+</html>
